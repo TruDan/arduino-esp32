@@ -1,5 +1,5 @@
 Welcome to ESP32 Arduino Core's documentation
-================================================
+=============================================
 
 .. toctree::
    :maxdepth: 2
@@ -9,3 +9,5 @@ Welcome to ESP32 Arduino Core's documentation
    Installing <installing>
    Boards <boards/boards>
    Libraries <libraries>
+   Library Builder <lib_builder>
+   ESP-IDF as Component <esp-idf_component>
