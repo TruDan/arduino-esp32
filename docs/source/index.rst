@@ -8,6 +8,4 @@ Welcome to ESP32 Arduino Core's documentation
    Getting Started <getting_started>
    Installing <installing>
    Boards <boards/boards>
-      ESP32 DevKit <boards/esp32-devkitC>
-      ESP32-C3 DevKit <boards/esp32-c3-devkit>
    Libraries <libraries>
