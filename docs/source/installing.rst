@@ -1,5 +1,6 @@
+##########
 Installing
-==========
+##########
 
 Before Installing
 -----------------
@@ -31,13 +32,13 @@ macOS, and Linux (x86, amd64, armhf and arm64).
 -  Open Boards Manager from Tools > Board menu and install *esp32* platform (and do not forget to select your ESP32 board from Tools > Board menu after installation).
 
 Windows
-=======
+-------
 
 Linux
-=====
+-----
 
 Debian/Ubuntu
--------------
+*************
 
 - Install latest Arduino IDE from `arduino.cc`_.
 
@@ -74,7 +75,7 @@ Debian/Ubuntu
    python3 get.py
 
 Fedora
-------
+******
 
 - Install the latest Arduino IDE from `arduino.cc`_.
    - Command ``$ sudo dnf -y install arduino`` will most likely install an older release.
@@ -96,7 +97,7 @@ Fedora
 - Restart Arduino IDE.
 
 openSUSE
---------
+********
 
 - Install the latest Arduino IDE from `arduino.cc`_.
 
@@ -152,7 +153,7 @@ Where ``~/Documents/Arduino`` represents your sketch book location as per "Ardui
 - Restart Arduino IDE.
 
 PlatformIO
-==========
+----------
 
 - `What is PlatformIO? <https://docs.platformio.org/en/latest/what-is-platformio.html?utm_source=github&utm_medium=arduino-esp32>`_
 
