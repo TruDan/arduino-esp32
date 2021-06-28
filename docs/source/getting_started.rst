@@ -19,8 +19,8 @@ ESP32-C3  No      Yes          `ESP32-C3 Datasheet`_
 ESP32-S3  No      No           Not Available Yet
 ========  ======  ===========  ===================================
 
-Supported Operational Systems
------------------------------
+Supported Operating Systems
+---------------------------
 
 .. toctree::
     :hidden:
