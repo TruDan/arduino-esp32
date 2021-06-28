@@ -1,5 +1,34 @@
+****************
 ESP32-S2-Saola-1
-================
+****************
+
+The `ESP32-S2-Saola-1`_ development board is one of the Espressif official boards. This board is based on the `ESP32-S2-WROVER`_ module, with the `ESP32-S2`_ as the core.
+
+Specifications
+--------------
+
+- Wi-Fi 802.11 b/g/n (802.11n up to 150 Mbps)
+- Built around ESP32-S2 series of SoCs Xtensa® single-core
+- Integrated 4 MB SPI flash
+- Integrated 2 MB PSRAM
+- Peripherals
+    - 43 × programmable GPIOs
+    - 2 × 13-bit SAR ADCs, up to 20 channels
+    - 2 × 8-bit DAC
+    - 14 × touch sensing IOs
+    - 4 × SPI
+    - 1 × I2S
+    - 2 × I2C
+    - 2 × UART
+    - RMT (TX/RX)
+    - LED PWM controller, up to 8 channels
+    - 1 × full-speed USB OTG
+    - 1 × temperature sensor
+    - 1 × DVP 8/16 camera interface, implemented using the hardware resources of I2S
+    - 1 × LCD interface (8-bit serial RGB/8080/6800), implemented using the hardware resources of SPI2
+    - 1 × LCD interface (8/16/24-bit parallel), implemented using the hardware resources of I2S
+    - 1 × TWAI® controller (compatible with ISO 11898-1)
+- On­board PCB antenna or external antenna connector
 
 Header Block
 ------------
@@ -72,3 +101,49 @@ Pin Layout
     :align: center
     :alt: ESP32-S2-Saola-1 (click to enlarge)
     :figclass: align-center
+
+Straping Pins
+-------------
+
+Some of the GPIO's has important feature during the booting process. Here is the list of the strapping pins on the `ESP32-S2`_.
+
+====  =========  =====================================================================  ============  ==============
+GPIO   Default    Function                                                               Pull-up       Pull-down
+====  =========  =====================================================================  ============  ==============
+IO45  Pull-down  Voltage of Internal LDO (VDD_SDIO)                                     1V8           3V3
+IO0   Pull-up    Booting Mode                                                           SPI Boot      Download Boot
+IO46  Pull-down  Booting Mode                                                           Don't Care    Download Boot
+IO46  Pull-up    Enabling/Disabling Log Print During Booting and Timing of SDIO Slave   U0TXD Active  U0TXD Silent
+====  =========  =====================================================================  ============  ==============
+
+For more detailed information, see the `ESP32-S2`_ datasheet.
+
+Restricted Usage GPIOS
+----------------------
+
+Some of the GPIO's are used for the external flash and PSRAM. These GPIO's cannot be used:
+
+====  ===================
+GPIO   Shared Function           
+====  ===================
+IO26  Connected to PSRAM
+====  ===================
+
+Other GPIO's are `INPUT ONLY` and cannot be used as output pin:
+
+====  ===========================
+GPIO   Function
+====  ===========================
+IO46  GPIO46
+====  ===========================
+
+Resources
+---------
+
+* `ESP32-S2`_ (Datasheet)
+* `ESP32-S2-WROVER`_ (Datasheet)
+* `ESP32-S2-Saola-1`_ (Schematics)
+
+.. _ESP32-S2: https://www.espressif.com/sites/default/files/documentation/esp32-s2_datasheet_en.pdf
+.. _ESP32-S2-WROVER: https://www.espressif.com/sites/default/files/documentation/esp32-s2-wrover_esp32-s2-wrover-i_datasheet_en.pdf
+.. _ESP32-S2-Saola-1: https://dl.espressif.com/dl/schematics/ESP32-S2-SAOLA-1_V1.1_schematics.pdf

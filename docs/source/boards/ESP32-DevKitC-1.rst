@@ -1,5 +1,34 @@
+***************
 ESP32-DevKitC-1
-===============
+***************
+
+The `ESP32-DevKitC-1`_ development board is one of the Espressif official boards. This board is based on the `ESP32-WROVER-E`_ module, with the `ESP32`_ as the core.
+
+Specifications
+--------------
+
+- Wi-Fi 802.11 b/g/n (802.11n up to 150 Mbps)
+- Bluetooth v4.2 BR/EDR and BLE specification
+- Built around ESP32 series of SoCs
+- Integrated 4 MB SPI flash
+- Integrated 8 MB PSRAM
+- Peripherals
+    - SD card
+    - UART
+    - SPI
+    - SDIO
+    - I2C
+    - LED PWM
+    - Motor PWM
+    - I2S
+    - IR
+    - Pulse Counter
+    - GPIO
+    - Capacitive Touch Sensor
+    - ADC
+    - DAC
+    - Two-Wire Automotive Interface (TWAI®, compatible with ISO11898-1)
+- On­board PCB antenna or external antenna connector
 
 Header Block
 ------------
@@ -68,3 +97,56 @@ Pin Layout
     :align: center
     :alt: ESP32-DevKitC-1 (click to enlarge)
     :figclass: align-center
+
+Straping Pins
+-------------
+
+Some of the GPIO's has important feature during the booting process. Here is the list of the strapping pins on the `ESP32`_.
+
+====  =========  =====================================================================  ============  ==============
+GPIO   Default    Function                                                               Pull-up       Pull-down
+====  =========  =====================================================================  ============  ==============
+IO12  Pull-down  Voltage of Internal LDO (VDD_SDIO)                                     1V8           3V3
+IO0   Pull-up    Booting Mode                                                           SPI Boot      Download Boot
+IO2   Pull-down  Booting Mode                                                           Don't Care    Download Boot
+IO15  Pull-up    Enabling/Disabling Log Print During Booting and Timing of SDIO Slave   U0TXD Active  U0TXD Silent
+IO5   Pull-up    Timing of SDIO Slave                                                   See `ESP32`_  See `ESP32`_
+====  =========  =====================================================================  ============  ==============
+
+Restricted Usage GPIOS
+----------------------
+
+Some of the GPIO's are used for the external flash and PSRAM. These GPIO's cannot be used:
+
+====  ===================
+GPIO   Shared Function           
+====  ===================
+IO6   External SPI Flash 
+IO7   External SPI Flash 
+IO8   External SPI Flash 
+IO9   External SPI Flash 
+IO10  External SPI Flash 
+IO11  External SPI Flash 
+====  ===================
+
+Other GPIO's are `INPUT ONLY` and cannot be used as output pin:
+
+====  =========================
+GPIO   Function
+====  =========================
+IO36  GPIO36, ADC1_CH0, S_VP
+IO39  GPIO39, ADC1_CH3, S_VN
+IO34  GPIO34, ADC1_CH6, VDET_1
+IO35  GPIO35, ADC1_CH7, VDET_2
+====  =========================
+
+Resources
+---------
+
+* `ESP32`_ (Datasheet)
+* `ESP32-WROVER-E`_ (Datasheet)
+* `ESP32-DevKitC`_ (Schematic)
+
+.. _ESP32: https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
+.. _ESP32-WROVER-E: https://www.espressif.com/sites/default/files/documentation/esp32-wrover-e_esp32-wrover-ie_datasheet_en.pdf
+.. _ESP32-DevKitC: https://dl.espressif.com/dl/schematics/esp32_devkitc_v4-sch.pdf

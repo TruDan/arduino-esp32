@@ -1,5 +1,36 @@
+******************
 ESP32-C3-DevKitM-1
-==================
+******************
+
+The ESP32-C3-DevKitM-1 development board is one of the Espressif official boards. This board is based on the `ESP32-C3-MINI-1`_ module, with the `ESP32-C3`_ as the core.
+
+Specifications
+--------------
+
+- Small­sized 2.4 GHz Wi­Fi (802.11 b/g/n) and Bluetooth® 5 module
+- Built around ESP32­C3 series of SoCs, RISC­V single­core microprocessor
+- 4 MB flash in chip package
+- 15 available GPIOs (module)
+- Peripherals
+    - 22 × programmable GPIOs
+    - Digital interfaces:
+    - 3 × SPI
+    - 2 × UART
+    - 1 × I2C
+    - 1 × I2S
+    - Remote control peripheral, with 2 transmit channels and 2 receive channels
+    - LED PWM controller, with up to 6 channels
+    - Full-speed USB Serial/JTAG controller
+    - General DMA controller (GDMA), with 3 transmit channels and 3 receive channels
+    - 1 × TWAI® controller (compatible with ISO 11898-1)
+    - Analog interfaces:
+        - 2 × 12-bit SAR ADCs, up to 6 channels
+        - 1 × temperature sensor
+    - Timers:
+        - 2 × 54-bit general-purpose timers
+        - 3 × watchdog timers
+        - 1 × 52-bit system timer
+- On­board PCB antenna or external antenna connector
 
 Header Block
 ------------
@@ -58,3 +89,28 @@ Pin Layout
     :align: center
     :alt: ESP32-C3-DevKitM-1 (click to enlarge)
     :figclass: align-center
+
+Straping Pins
+-------------
+
+Some of the GPIO's has important feature during the booting process. Here is the list of the strapping pins on the `ESP32-C3`_.
+
+====  =========  =====================================================================  ================  =================
+GPIO   Default    Function                                                               Pull-up          Pull-down
+====  =========  =====================================================================  ================  =================
+IO2   N/A        Booting Mode                                                           See `ESP32-C3`_   See `ESP32-C3`_
+IO9   Pull-up    Booting Mode                                                           SPI Boot          Download Boot
+IO8   N/A        Booting Mode                                                           Don't Care        Download Boot
+IO8   Pull-up    Enabling/Disabling Log Print                                           See `ESP32-C3`_   See `ESP32-C3`_
+====  =========  =====================================================================  ================  =================
+
+For more detailed information, see the `ESP32-C3`_ datasheet.
+
+Resources
+---------
+
+* `ESP32-C3`_ (Datasheet)
+* `ESP32-C3-MINI-1`_ (Datasheet)
+
+.. _ESP32-C3: https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf
+.. _ESP32-C3-MINI-1: https://www.espressif.com/sites/default/files/documentation/esp32-c3-mini-1_datasheet_en.pdf

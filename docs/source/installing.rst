@@ -16,11 +16,12 @@ Installing using Boards Manager
 
    https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_dev_index.json
 
-
 Starting with 1.6.4, Arduino allows installation of third-party platform
 packages using Boards Manager. We have packages available for Windows,
 macOS, and Linux (x86, amd64, armhf and arm64).
 
+.. note::
+   Currently, the support for new chips (ESP32-S2 and ESP32-C3) are in the development release. Consider installing the development release if you need to test the new supported SoC in beta.
 
 -  Install the current upstream Arduino IDE at the 1.8 level or later. The current version is at the `arduino.cc`_ website.
 
@@ -32,8 +33,6 @@ macOS, and Linux (x86, amd64, armhf and arm64).
 
 Windows
 -------
-
-
 
 Linux
 -----
@@ -122,9 +121,8 @@ openSUSE
 
 - Restart Arduino IDE.
 
-
 macOS
-=====
+-----
 
 - Install the latest Arduino IDE from `arduino.cc`_.
 
@@ -169,7 +167,5 @@ PlatformIO
 
 - `Project Examples <https://docs.platformio.org/en/latest/platforms/espressif32.html?utm_source=github&utm_medium=arduino-esp32#examples>`_
 
-References
-==========
 
 .. _Arduino.cc: https://www.arduino.cc/en/Main/Software
