@@ -1,5 +1,6 @@
+######
 Boards
-======
+######
 
 Espressif Boards
 ----------------
@@ -14,3 +15,8 @@ Espressif Boards
 
 Third Party
 -----------
+
+Add here the third party boards, listed by vendors.
+
+Generic
+*******

@@ -1,6 +1,6 @@
-***************
+###############
 ESP32-DevKitC-1
-***************
+###############
 
 The `ESP32-DevKitC-1`_ development board is one of the Espressif official boards. This board is based on the `ESP32-WROVER-E`_ module, with the `ESP32`_ as the core.
 
@@ -95,6 +95,7 @@ Pin Layout
 
 .. figure:: ../_static/esp32_pinmap.png
     :align: center
+    :scale: 15%
     :alt: ESP32-DevKitC-1 (click to enlarge)
     :figclass: align-center
 
@@ -113,8 +114,8 @@ IO15  Pull-up    Enabling/Disabling Log Print During Booting and Timing of SDIO 
 IO5   Pull-up    Timing of SDIO Slave                                                   See `ESP32`_  See `ESP32`_
 ====  =========  =====================================================================  ============  ==============
 
-Restricted Usage GPIOS
-----------------------
+Restricted Usage GPIO's
+-----------------------
 
 Some of the GPIO's are used for the external flash and PSRAM. These GPIO's cannot be used:
 

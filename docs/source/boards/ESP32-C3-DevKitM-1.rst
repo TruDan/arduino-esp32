@@ -1,6 +1,6 @@
-******************
+##################
 ESP32-C3-DevKitM-1
-******************
+##################
 
 The ESP32-C3-DevKitM-1 development board is one of the Espressif official boards. This board is based on the `ESP32-C3-MINI-1`_ module, with the `ESP32-C3`_ as the core.
 
@@ -87,6 +87,7 @@ Pin Layout
 
 .. figure:: ../_static/esp32c3_pinmap.png
     :align: center
+    :scale: 15%
     :alt: ESP32-C3-DevKitM-1 (click to enlarge)
     :figclass: align-center
 

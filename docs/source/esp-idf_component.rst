@@ -1,5 +1,6 @@
+##############################
 Arduino as a ESP-IDF component
-==============================
+##############################
 
 ESP32 Arduino lib-builder
 -------------------------
@@ -11,7 +12,7 @@ Installation
 
 - Download and install `ESP-IDF <https://github.com/espressif/esp-idf>`_.
 - Create blank idf project (from one of the examples).
-- in the project folder, create a folder called components and clone this repository inside.
+- In the project folder, create a new folder called `components` and clone this repository inside the new created folder.
 
 .. code-block:: bash
     
@@ -24,9 +25,9 @@ Installation
     idf.py menuconfig
 
 
-- ```idf.py menuconfig``` has some Arduino options
-    - "Autostart Arduino setup and loop on boot"
-        - If you enable this options, your main.cpp should be formated like any other sketch
+- The `idf.py menuconfig` has some Arduino options.
+    - On `Autostart Arduino setup and loop on boot`.
+        - If you enable this options, your main.cpp should be formated like any other sketch.
 
 .. code-block:: c
 

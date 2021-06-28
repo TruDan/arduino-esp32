@@ -1,6 +1,6 @@
-****************
+################
 ESP32-S2-Saola-1
-****************
+################
 
 The `ESP32-S2-Saola-1`_ development board is one of the Espressif official boards. This board is based on the `ESP32-S2-WROVER`_ module, with the `ESP32-S2`_ as the core.
 
@@ -99,6 +99,7 @@ Pin Layout
 
 .. figure:: ../_static/esp32s2_pinmap.png
     :align: center
+    :scale: 15%
     :alt: ESP32-S2-Saola-1 (click to enlarge)
     :figclass: align-center
 
