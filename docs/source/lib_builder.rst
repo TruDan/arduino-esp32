@@ -2,7 +2,7 @@ Library Builder
 ===============
 
 How to Use Library Builder
-**************************
+--------------------------
 
 Espressif has provided a `tool <https://github.com/espressif/esp32-arduino-lib-builder>`_ to simplify building your own compiled libraries for use in Arduino IDE (or your favorite IDE).
 To use it to generate custom libraries, follow these steps:

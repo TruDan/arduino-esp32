@@ -1,12 +1,11 @@
-**********
 Installing
-**********
+==========
 
 Before Installing
 -----------------
 
-Installing using Boards Manager
--------------------------------
+Installing using Boards Manager (preferred way)
+-----------------------------------------------
 
 - Stable release link::
 
@@ -38,7 +37,7 @@ Linux
 -----
 
 Debian/Ubuntu
-===============
+-------------
 
 - Install latest Arduino IDE from `arduino.cc`_.
 
@@ -75,7 +74,7 @@ Debian/Ubuntu
    python3 get.py
 
 Fedora
-======
+------
 
 - Install the latest Arduino IDE from `arduino.cc`_.
    - Command ``$ sudo dnf -y install arduino`` will most likely install an older release.
@@ -97,7 +96,7 @@ Fedora
 - Restart Arduino IDE.
 
 openSUSE
-========
+--------
 
 - Install the latest Arduino IDE from `arduino.cc`_.
 

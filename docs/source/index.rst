@@ -11,3 +11,4 @@ Welcome to ESP32 Arduino Core's documentation
    Libraries <libraries>
    Library Builder <lib_builder>
    ESP-IDF as Component <esp-idf_component>
+   Troubleshooting <troubleshooting>

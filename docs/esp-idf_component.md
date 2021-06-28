@@ -1,5 +1,5 @@
 To use as a component of ESP-IDF
-=================================================
+================================
 
 ## esp32-arduino-lib-builder
 
