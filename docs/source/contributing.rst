@@ -1,5 +1,6 @@
+###################
 Contributions Guide
-===================
+###################
 
 We welcome contributions to the Arduino ESP32 project!
 
@@ -39,12 +40,5 @@ If this process passes, it will be merged onto the public github repository.
 Legal Part
 ----------
 
-Before a contribution can be accepted, you will need to sign our :doc:`contributor-agreement`. You will be prompted for this automatically as part of the Pull Request process.
+Before a contribution can be accepted, you will need to sign our contributor-agreement. You will be prompted for this automatically as part of the Pull Request process.
 
-Related Documents
------------------
-
-.. toctree::
-    :maxdepth: 1
-
-        contributor-agreement

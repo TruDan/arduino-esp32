@@ -95,7 +95,7 @@ Pin Layout
 
 .. figure:: ../_static/esp32_pinmap.png
     :align: center
-    :scale: 15%
+    :width: 600
     :alt: ESP32-DevKitC-1 (click to enlarge)
     :figclass: align-center
 

@@ -99,7 +99,7 @@ Pin Layout
 
 .. figure:: ../_static/esp32s2_pinmap.png
     :align: center
-    :scale: 15%
+    :width: 600
     :alt: ESP32-S2-Saola-1 (click to enlarge)
     :figclass: align-center
 

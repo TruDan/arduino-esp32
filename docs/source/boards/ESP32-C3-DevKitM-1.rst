@@ -87,7 +87,7 @@ Pin Layout
 
 .. figure:: ../_static/esp32c3_pinmap.png
     :align: center
-    :scale: 15%
+    :width: 600
     :alt: ESP32-C3-DevKitM-1 (click to enlarge)
     :figclass: align-center
 
