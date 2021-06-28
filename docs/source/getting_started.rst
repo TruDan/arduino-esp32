@@ -25,17 +25,12 @@ Supported Operating Systems
 +-------------------+-------------------+-------------------+
 | |windows-logo|    | |linux-logo|      | |macos-logo|      |
 +-------------------+-------------------+-------------------+
-| `Windows`_        | `Linux`_          | `macOS`_          |
+| Windows           | Linux             | macOS             |
 +-------------------+-------------------+-------------------+
 
 .. |windows-logo| image:: _static/windows-logo.png
-    :target: ../installing.html#windows
-
 .. |linux-logo| image:: _static/linux-logo.png
-    :target: ../installing.html#linux
-
 .. |macos-logo| image:: _static/macos-logo.png
-    :target: ../installing.html#macos
 
 .. _Windows: ../installing.html#windows
 .. _Linux: ../installing.html#linux
