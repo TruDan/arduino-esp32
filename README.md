@@ -9,7 +9,6 @@
 - [Installation Instructions](#installation-instructions)
 - [Decoding Exceptions](#decoding-exceptions)
 - [Issue/Bug report template](#issuebug-report-template)
-- [ESP32Dev Board PINMAP](#esp32dev-board-pinmap)
 
 ### ESP32-S2 and ESP32-C3 Support
 If you want to test ESP32-S2 and/or ESP32-C3 through the board manager, please use the development release link: `https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_dev_index.json` and install the latest 2.0.0 version.
@@ -22,6 +21,7 @@ Latest Development Release  [![Release Version](https://img.shields.io/github/re
 
 
 ### Installation Instructions
+
 - Using Arduino IDE Boards Manager (preferred)
   + [Instructions for Boards Manager](docs/arduino-ide/boards_manager.md)
 - Using Arduino IDE with the development repository
@@ -30,9 +30,9 @@ Latest Development Release  [![Release Version](https://img.shields.io/github/re
   + [Instructions for Debian/Ubuntu Linux](docs/arduino-ide/debian_ubuntu.md)
   + [Instructions for Fedora](docs/arduino-ide/fedora.md)
   + [Instructions for openSUSE](docs/arduino-ide/opensuse.md)
-- [Using PlatformIO](docs/platformio.md)
+- REMOVE: [Using PlatformIO](docs/platformio.md)
 - [Building with make](docs/make.md)
-- [Using as ESP-IDF component](docs/esp-idf_component.md)
+- REMOVE: [Using as ESP-IDF component](docs/esp-idf_component.md)
 - [Using OTAWebUpdater](docs/OTAWebUpdate/OTAWebUpdate.md)
 
 ### Decoding exceptions

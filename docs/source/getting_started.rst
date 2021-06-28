@@ -7,5 +7,8 @@ About Arduino ESP32
 How to Contribute
 -----------------
 
-Installation
-------------
+Supported Operational Systems
+-----------------------------
+
+Currently, the supported OS are: Windows, Linux and macOS.
+
