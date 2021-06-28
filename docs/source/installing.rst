@@ -31,10 +31,10 @@ macOS, and Linux (x86, amd64, armhf and arm64).
 -  Open Boards Manager from Tools > Board menu and install *esp32* platform (and do not forget to select your ESP32 board from Tools > Board menu after installation).
 
 Windows
--------
+=======
 
 Linux
------
+=====
 
 Debian/Ubuntu
 -------------
@@ -152,7 +152,7 @@ Where ``~/Documents/Arduino`` represents your sketch book location as per "Ardui
 - Restart Arduino IDE.
 
 PlatformIO
-----------
+==========
 
 - `What is PlatformIO? <https://docs.platformio.org/en/latest/what-is-platformio.html?utm_source=github&utm_medium=arduino-esp32>`_
 
