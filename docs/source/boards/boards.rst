@@ -2,9 +2,6 @@
 Boards
 ######
 
-Espressif Boards
-----------------
-
 .. toctree::
     :maxdepth: 1
     :caption: Espressif Boards:
@@ -17,9 +14,6 @@ Third Party
 -----------
 
 Add here the third party boards, listed by vendors.
-
-Generic
-*******
 
 .. toctree::
     :maxdepth: 1

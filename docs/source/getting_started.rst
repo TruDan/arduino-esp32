@@ -22,13 +22,6 @@ ESP32-S3  No      No           Not Available Yet
 Supported Operating Systems
 ---------------------------
 
-.. toctree::
-    :hidden:
-
-    Windows <installing>
-    Linux <installing>
-    macOS <installing>
-
 +-------------------+-------------------+-------------------+
 | |windows-logo|    | |linux-logo|      | |macos-logo|      |
 +-------------------+-------------------+-------------------+
@@ -36,17 +29,17 @@ Supported Operating Systems
 +-------------------+-------------------+-------------------+
 
 .. |windows-logo| image:: _static/windows-logo.png
-    :target: ../installing.html
+    :target: ../installing.html#windows
 
 .. |linux-logo| image:: _static/linux-logo.png
-    :target: ../installing.html
+    :target: ../installing.html#linux
 
 .. |macos-logo| image:: _static/macos-logo.png
-    :target: ../installing.html
+    :target: ../installing.html#macos
 
-.. _Windows: ../installing.html
-.. _Linux: ../installing.html
-.. _macOS: ../installing.html
+.. _Windows: ../installing.html#windows
+.. _Linux: ../installing.html#linux
+.. _macOS: ../installing.html#macos
 
 .. _ESP32 Datasheet: https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
 .. _ESP32-S2 Datasheet: https://www.espressif.com/sites/default/files/documentation/esp32-s2_datasheet_en.pdf
