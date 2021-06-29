@@ -32,9 +32,18 @@ Supported Operating Systems
 .. |linux-logo| image:: _static/linux-logo.png
 .. |macos-logo| image:: _static/macos-logo.png
 
-.. _Windows: ../installing.html#windows
-.. _Linux: ../installing.html#linux
-.. _macOS: ../installing.html#macos
+
+First Things First
+------------------
+
+Arduino Core Documentation
+--------------------------
+
+How to Getting Started
+----------------------
+
+Development boards
+------------------
 
 .. _ESP32 Datasheet: https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
 .. _ESP32-S2 Datasheet: https://www.espressif.com/sites/default/files/documentation/esp32-s2_datasheet_en.pdf
