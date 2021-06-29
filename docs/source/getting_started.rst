@@ -158,4 +158,3 @@ Before buying: Keep in mind for some "must have" features when choosing the best
 .. _Adafruit (Discord): https://discord.gg/adafruit
 .. _Espressif MCUs (Discord): https://discord.gg/nKxMTnkD
 .. _ESP32 on Reddit: https://www.reddit.com/r/esp32
-

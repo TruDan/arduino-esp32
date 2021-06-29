@@ -63,4 +63,4 @@ html_theme = 'default'
 html_static_path = ['_static']
 
 # Style
-pygments_style = "sphinx"
+# pygments_style = "sphinx"
