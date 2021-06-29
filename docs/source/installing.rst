@@ -78,7 +78,9 @@ Fedora
 ******
 
 - Install the latest Arduino IDE from `arduino.cc`_.
-   - Command ``$ sudo dnf -y install arduino`` will most likely install an older release.
+
+.. note::
+   Command ``$ sudo dnf -y install arduino`` will most likely install an older release.
 
 - Open Terminal and execute the following command (copy -> paste and hit enter):
 

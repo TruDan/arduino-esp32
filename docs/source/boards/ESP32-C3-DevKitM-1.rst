@@ -35,6 +35,9 @@ Specifications
 Header Block
 ------------
 
+.. note::
+    Not all of the chip pins are exposed to the pin headers.
+
 J1
 ^^^
 ===  ====  ==========  ===================================
@@ -85,7 +88,7 @@ No.  Name  Type [1]_   Function
 Pin Layout
 ----------
 
-.. figure:: ../_static/esp32c3_pinmap.png
+.. figure:: ../_static/esp32-c3_devkitM-1_pinlayout.png
     :align: center
     :width: 600
     :alt: ESP32-C3-DevKitM-1 (click to enlarge)
