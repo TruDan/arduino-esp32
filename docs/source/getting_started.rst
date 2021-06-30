@@ -70,7 +70,7 @@ Community
 *********
 
 The Arduino community is huge! You can find a lot of useful content on the Internet.
-Here are some community channels you may found information and ask for some help, if needed.
+Here are some community channels where you may found information and ask for some help, if needed.
 
 - `ESP32 Forum`_: Official Espressif Forum for ESP32 related discussions.
 - `Gitter`_
