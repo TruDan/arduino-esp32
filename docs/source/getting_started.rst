@@ -49,9 +49,9 @@ Supported Operating Systems
 | Windows           | Linux             | macOS             |
 +-------------------+-------------------+-------------------+
 
-.. |windows-logo| image:: _static/windows-logo.png
-.. |linux-logo| image:: _static/linux-logo.png
-.. |macos-logo| image:: _static/macos-logo.png
+.. |windows-logo| image:: _static/logo_windows.png
+.. |linux-logo| image:: _static/logo_linux.png
+.. |macos-logo| image:: _static/logo_macos.png
 
 Support
 *******
@@ -93,7 +93,7 @@ Installing
 
 To install Arduino-ESP32, please see the dedicated section on the Installation guide. We recommend you to install using the boards manager.
 
-`Installing <installing>`_
+`Installing <installing.html>`_
 
 Examples
 ********
@@ -101,7 +101,7 @@ Examples
 After installing the toolchain into your environment, you will be able to see all dedicated examples for the ESP32. Those examples are located
 in the examples menu or by the `examples` folder inside each `libraries`.
 
-https://github.com/espressif/arduino-esp32/tree/master/libraries
+    https://github.com/espressif/arduino-esp32/tree/master/libraries
 
 Development Boards
 ------------------

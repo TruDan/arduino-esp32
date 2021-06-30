@@ -89,14 +89,12 @@ Steps to install Arduino ESP32 support on Windows
 
 .. figure:: _static/win-gui-2.png
    :align: center
-   :width: 600
    :figclass: align-center
 
 **Step 3**
 
 .. figure:: _static/win-gui-3.png
    :align: center
-   :width: 600
    :figclass: align-center
 
 - open a `Git Bash` session pointing to ```[ARDUINO_SKETCHBOOK_DIR]/hardware/espressif/esp32``` and execute ```git submodule update --init --recursive``` 
@@ -106,7 +104,6 @@ Steps to install Arduino ESP32 support on Windows
 
 .. figure:: _static/win-gui-4.png
    :align: center
-   :width: 600
    :figclass: align-center
 
 - When ```get.exe``` finishes, you should see the following files in the directory
@@ -115,7 +112,6 @@ Steps to install Arduino ESP32 support on Windows
 
 .. figure:: _static/win-gui-5.png
    :align: center
-   :width: 600
    :figclass: align-center
 
 1. Plug your ESP32 board and wait for the drivers to install (or install manually any that might be required)
@@ -126,7 +122,6 @@ Steps to install Arduino ESP32 support on Windows
 
 .. figure:: _static/arduino-ide.png
    :align: center
-   :width: 600
    :figclass: align-center
 
 How to update to the latest code
@@ -136,22 +131,19 @@ How to update to the latest code
 
 .. figure:: _static/win-gui-update-1.png
    :align: center
-   :width: 600
    :figclass: align-center
 
-2. From menu ```Remote``` select ```Fetch from``` > ```origin```
+1. From menu ```Remote``` select ```Fetch from``` > ```origin```
 
 .. figure:: _static/win-gui-update-2.png
    :align: center
-   :width: 600
    :figclass: align-center
 
-3. Wait for git to pull any changes and close ```Git GUI```
-4. Open ```[ARDUINO_SKETCHBOOK_DIR]/hardware/espressif/esp32/tools``` and double-click ```get.exe```
+1. Wait for git to pull any changes and close ```Git GUI```
+2. Open ```[ARDUINO_SKETCHBOOK_DIR]/hardware/espressif/esp32/tools``` and double-click ```get.exe```
 
 .. figure:: _static/win-gui-4.png
    :align: center
-   :width: 600
    :figclass: align-center
 
 Linux

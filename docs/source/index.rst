@@ -10,6 +10,7 @@ Welcome to ESP32 Arduino Core's documentation
    Installing <installing>
    Boards <boards/boards>
    Libraries <libraries>
+   Tutorials <tutorials/tutorials>
    Library Builder <lib_builder>
    ESP-IDF as Component <esp-idf_component>
    OTA Web Update <ota_web_update>

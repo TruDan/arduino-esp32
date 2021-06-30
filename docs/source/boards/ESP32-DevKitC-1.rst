@@ -117,6 +117,8 @@ IO15  Pull-up    Enabling/Disabling Log Print During Booting and Timing of SDIO 
 IO5   Pull-up    Timing of SDIO Slave                                                   See `ESP32`_  See `ESP32`_
 ====  =========  =====================================================================  ============  ==============
 
+Be aware when choosing those pins to use.
+
 Restricted Usage GPIO's
 -----------------------
 
@@ -138,10 +140,10 @@ Other GPIO's are `INPUT ONLY` and cannot be used as output pin:
 ====  =========================
 GPIO   Function
 ====  =========================
-IO36  GPIO36, ADC1_CH0, S_VP
-IO39  GPIO39, ADC1_CH3, S_VN
 IO34  GPIO34, ADC1_CH6, VDET_1
 IO35  GPIO35, ADC1_CH7, VDET_2
+IO36  GPIO36, ADC1_CH0, S_VP
+IO39  GPIO39, ADC1_CH3, S_VN
 ====  =========================
 
 Resources
