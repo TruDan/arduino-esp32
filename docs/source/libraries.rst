@@ -2,8 +2,9 @@
 Libraries
 #########
 
-Index
------
+.. toctree::
+    :maxdepth: 2
+    :caption: Espressif Boards:
 
-* WiFi
-* Bluetooth
+    Wi-Fi <api/wifi>
+    Bluetooth <api/bluetooth>

@@ -3,7 +3,7 @@ Welcome to ESP32 Arduino Core's documentation
 #############################################
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    :caption: Contents:
 
    Getting Started <getting_started>
@@ -12,5 +12,6 @@ Welcome to ESP32 Arduino Core's documentation
    Libraries <libraries>
    Library Builder <lib_builder>
    ESP-IDF as Component <esp-idf_component>
+   OTA Web Update <ota_web_update>
    Troubleshooting <troubleshooting>
    Contributing <contributing>
