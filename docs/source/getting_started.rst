@@ -40,6 +40,14 @@ ESP32-C3 No     Yes         `ESP32-C3 Datasheet`_
 ESP32-S3 No     No          Not Available Yet
 ======== ====== =========== ===================================
 
+Arduino Core Reference
+----------------------
+
+This documentation is built on the ESP32 and we are not going to cover the common Arduino API. To see the Arduino reference documentation, 
+please consider to read the official documentation.
+
+Arduino Official Documentation: `Arduino Reference`_.
+
 Supported Operating Systems
 ---------------------------
 
@@ -72,18 +80,12 @@ Community
 The Arduino community is huge! You can find a lot of useful content on the Internet.
 Here are some community channels where you may found information and ask for some help, if needed.
 
-- `ESP32 Forum`_: Official Espressif Forum for ESP32 related discussions.
+- `ESP32 Forum`_: Official Espressif Forum.
+- `ESP32 Forum - Arduino`_: Official Espressif Forum for Arduino related discussions.
+- `ESP32 Forum - Hardware`_: Official Espressif Forum for Hardware related discussions.
 - `Gitter`_
 - `Espressif MCUs (Discord)`_
 - `ESP32 on Reddit`_
-
-Arduino Core Reference
-----------------------
-
-This documentation is built on the ESP32 and we are not going to cover the common Arduino API. To see the Arduino reference documentation, 
-please consider to read the official documentation.
-
-Arduino Official Documentation: `Arduino Reference`_.
 
 How to Getting Started
 ----------------------
@@ -103,58 +105,8 @@ in the examples menu or by the `examples` folder inside each `libraries`.
 
     https://github.com/espressif/arduino-esp32/tree/master/libraries
 
-Development Boards
-------------------
-
-You will need a development board or a custom board with the ESP32 (see Supported SoC's) to start playing with.
-There is a bunch of different types and models widely available on the Internet. You need to choose one that covers all your requirements.
-
-To help you on this selection, we point out some facts about choosing the proper boards and somehow to help you to save money and time.
-
-One ESP32 to rule them all!
-***************************
-
-One important information that usually makes some confusion is regarding the different models of the ESP32 SoC and modules.
-
-The ESP32 is divided by family:
-
-* ESP32
-    * Wi-Fi and BLE
-* ESP32-S
-    * Wi-Fi only
-* ESP32-C
-    * Wi-Fi and BLE 5
-
-For each family, we have SoC variants with some differentiation. The differences are more about the embedded flash and its size and the number of the cores (dual or single).
-
-The modules uses the SoC internally, including the external flash, PSRAM (in some models) and other essential electronics components. Essentially all
-modules from the same family uses the same SoC.
-
-.. figure:: _static/soc-module.png
-    :align: center
-    :width: 250
-    :alt: ESP32 SoC and Module (click to enlarge)
-    :figclass: align-center
-
-**For example:**
-
-The SoC partnumber is the ESP32-D0WD-V3 and it's the same SoC used inside of the ESP32-WROVER (with PSRAM) and ESP32-WROOM modules. This mean that the
-same characteristics are present in both modules core.
-
-For more detailed information regarding the SoC's and modules, see the `Espressif Product Selector`_.
-
-Now you know that the module could be different but the heart is the same, you can choose your development board.
-
-Before buying: Keep in mind for some "must have" features when choosing the best board for your needs:
-
-- Embedded USB-to-Serial
-    - This is very convenient for programming and monitoring the logs with the terminal via USB. 
-- Breadboard friendly
-    - If you are prototyping, this will be very useful to connect your board directly on the breadboard.
-- open-source/open-hardware
-    - Check if the schematics are available for download. This helps a lot on prototyping.
-- Support
-    - Some of the manufactures offers a very good level of supporting, with examples and demo projects.
+Resources
+---------
 
 .. _Espressif Systems: https://www.espressif.com 
 .. _Espressif Product Selector: https://products.espressif.com/
@@ -164,6 +116,8 @@ Before buying: Keep in mind for some "must have" features when choosing the best
 .. _Arduino.cc: https://www.arduino.cc/en/Main/Software
 .. _Arduino Reference: https://www.arduino.cc/reference/en/
 .. _ESP32 Forum: https://esp32.com
+.. _ESP32 Forum - Arduino: https://esp32.com/viewforum.php?f=19
+.. _ESP32 Forum - Hardware: https://esp32.com/viewforum.php?f=12
 .. _Gitter: https://gitter.im/espressif/arduino-esp32
 .. _Adafruit (Discord): https://discord.gg/adafruit
 .. _Espressif MCUs (Discord): https://discord.gg/nKxMTnkD
