@@ -23,6 +23,7 @@ Before sending us a Pull Request, please consider this list of points:
 * Are comments and documentation written in clear English, with no spelling or grammar errors?
 
 * Example contributions are also welcome.
+  * If you are contributing by adding a new example, please use the `Arduino style guide`_.
 
 * If the contribution contains multiple commits, are they grouped together into logical changes (one major change per pull request)? Are any commits with names like "fixed typo" `squashed into previous commits <https://eli.thegreenplace.net/2014/02/19/squashing-github-pull-requests-into-a-single-commit/>`_?
 
@@ -42,3 +43,6 @@ Legal Part
 
 Before a contribution can be accepted, you will need to sign our contributor-agreement. You will be prompted for this automatically as part of the Pull Request process.
 
+
+
+.. _Arduino style guide: https://www.arduino.cc/en/Reference/StyleGuide

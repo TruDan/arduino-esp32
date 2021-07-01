@@ -34,7 +34,6 @@ Code
 
 .. code-block:: arduino
     :caption: Blink.ino
-    :linenos:
 
     /*
     Blink
