@@ -6,6 +6,7 @@ tools/esptool
 tools/esptool.exe
 tools/mkspiffs
 tools/mklittlefs
+tools/mkfatfs.exe
 .DS_Store
 
 #Ignore files built by Visual Studio/Visual Micro
@@ -20,5 +21,4 @@ boards.sloeber.txt
 tools/mklittlefs
 
 # Ignore docs build (Sphinx)
-docs/_build
 docs/build
