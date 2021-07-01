@@ -7,4 +7,4 @@ Tutorials
     :caption: Tutorials:
 
     Basic <basic>
-
+    DFU <dfu>

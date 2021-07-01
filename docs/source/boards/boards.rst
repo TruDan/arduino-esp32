@@ -56,9 +56,17 @@ Before buying: Keep in mind for some "must have" features when choosing the best
     - Some of the manufactures offers a very good level of supporting, with examples and demo projects.
 
 
+Espressif
+---------
+
+.. figure:: ../_static/logo_espressif.png
+    :align: center
+    :width: 250
+    :alt: Espressif Logo
+    :figclass: align-center
+
 .. toctree::
     :maxdepth: 1
-    :caption: Espressif Boards:
 
     ESP32-DevKitC <ESP32-DevKitC-1>
     ESP32-S2-Saola-1 <ESP32-S2-Saola-1>
@@ -69,11 +77,13 @@ Third Party
 
 Add here the third party boards, listed by vendors.
 
+Generic Vendor
+**************
+
 .. toctree::
     :maxdepth: 1
-    :caption: Generic Boards:
 
-    Generic <generic>
+    Generic Board Name <generic>
 
 Resources
 ---------
