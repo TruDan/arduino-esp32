@@ -74,3 +74,16 @@ Add here the third party boards, listed by vendors.
     :caption: Generic Boards:
 
     Generic <generic>
+
+Resources
+---------
+
+* `ESP32 Datasheet`_ (Datasheet)
+* `ESP32-S2 Datasheet`_ (Datasheet)
+* `ESP32-C3 Datasheet`_ (Datasheet)
+
+.. _Espressif Systems: https://www.espressif.com 
+.. _Espressif Product Selector: https://products.espressif.com/
+.. _ESP32 Datasheet: https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
+.. _ESP32-S2 Datasheet: https://www.espressif.com/sites/default/files/documentation/esp32-s2_datasheet_en.pdf
+.. _ESP32-C3 Datasheet: https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf
