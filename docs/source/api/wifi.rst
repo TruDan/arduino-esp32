@@ -7,7 +7,6 @@ About
 
 The Wi-Fi API provide support for the 802.11b/g/n protocol driver. This API includes:
 
-
 * Station mode (STA mode or Wi-Fi client mode). ESP32 connects to an access point.
 
 * AP mode (aka Soft-AP mode or Access Point mode). Devices connects to the ESP32.
@@ -57,11 +56,13 @@ The ``WiFiAP`` is used to configure and manage the Wi-Fi as Access Point. Here a
 Basic Usage
 ***********
 
-To start the Wi-Fi as AP
+To start the Wi-Fi as Access Point.
 
 .. code-block:: arduino
 
     WiFi.softAP(ssid, password);
+
+Please see the full example of the WiFiAP in: `ap example`_.
 
 begin
 *****
@@ -74,11 +75,11 @@ begin
 
 Where:
 
-* ``const char* ssid`` set the AP SSID.
-* ``const char *passphrase`` set the AP password. Set as ``NULL`` for open networks.
-* ``int32_t channel`` set the Wi-Fi channel.
-* ``const uint8_t* bssid`` set the AP BSSID.
-* ``bool connect`` set ``true`` to connect to the configured network automatically.
+* ``ssid`` set the AP SSID.
+* ``passphrase`` set the AP password. Set as ``NULL`` for open networks.
+* ``channel`` set the Wi-Fi channel.
+* ``uint8_t* bssid`` set the AP BSSID.
+* ``connect`` set ``true`` to connect to the configured network automatically.
 
 .. code-block:: arduino
 
@@ -86,11 +87,11 @@ Where:
 
 Where:
 
-* ``char* ssid`` set the AP SSID.
-* ``char *passphrase`` set the AP password. Set as ``NULL`` for open networks.
-* ``int32_t channel`` set the Wi-Fi channel.
-* ``const uint8_t* bssid`` set the AP BSSID.
-* ``bool connect`` set ``true`` to connect to the configured network automatically.
+* ``ssid`` set the AP SSID.
+* ``passphrase`` set the AP password. Set as ``NULL`` for open networks.
+* ``channel`` set the Wi-Fi channel.
+* ``bssid`` set the AP BSSID.
+* ``connect`` set ``true`` to connect to the configured network automatically.
 
 .. code-block:: arduino
 
@@ -109,11 +110,11 @@ Function ``config`` is used to configure Wi-Fi. After configuring, you can call 
 
 Where:
 
-* ``IPAddress local_ip`` set the local IP.
-* ``IPAddress gateway`` set the gateway IP.
-* ``IPAddress subnet`` set the subnet mask.
-* ``IPAddress dns1`` set the DNS.
-* ``IPAddress dns2`` set the DNS alternative option.
+* ``local_ip`` set the local IP.
+* ``gateway`` set the gateway IP.
+* ``subnet`` set the subnet mask.
+* ``dns1`` set the DNS.
+* ``dns2`` set the DNS alternative option.
 
 Return ``true`` if the configuration was successful.
 
@@ -137,8 +138,8 @@ Function to force disconnection.
 
 Where:
 
-* ``bool wifioff`` use ``true`` to turn the Wi-Fi radio off.
-* ``bool eraseap`` use ``true`` to erase the AP configuration from the NVS memory.
+* ``wifioff`` use ``true`` to turn the Wi-Fi radio off.
+* ``eraseap`` use ``true`` to erase the AP configuration from the NVS memory.
 
 Return ``true`` if the configuration was successful.
 
@@ -188,7 +189,7 @@ Function used to set the automatic reconnection if the connection is lost.
 
 Where:
 
-* ``bool autoConnect`` is set to ``true`` to enable this option.
+* ``autoConnect`` is set to ``true`` to enable this option.
 
 getAutoReconnect
 ****************
@@ -231,7 +232,7 @@ After a successful connection, you can print the IP address given by the network
     Serial.println("IP address: ");
     Serial.println(WiFi.localIP());
 
-Please see the full example of the WiFiSTA in: ref:: Wi-Fi STA.
+Please see the full example of the WiFiSTA in: `sta example`_.
 
 softAP
 ******
@@ -244,12 +245,12 @@ To configure the Wi-Fi AP characteristics, the function ``softAP`` is used:
 
 Where:
 
-* ``const char* ssid`` set the Wi-Fi network SSID.
-* ``const char* passphrase`` set the Wi-Fi network password. If the network is open, set as ``NULL``. 
-* ``int channel`` configure the Wi-Fi channel.
-* ``int ssid_hidden`` set the network as hidden.
-* ``int max_connection`` set the maxumum number of simultaneous connections. The default is 4.
-* ``bool ftm_responder`` set the Wi-Fi FTM responder feature. **Only for ESP32-S2 and ESP32-C3 SoC!**
+* ``ssid`` set the Wi-Fi network SSID.
+* ``passphrase`` set the Wi-Fi network password. If the network is open, set as ``NULL``. 
+* ``channel`` configure the Wi-Fi channel.
+* ``ssid_hidden`` set the network as hidden.
+* ``max_connection`` set the maxumum number of simultaneous connections. The default is 4.
+* ``ftm_responder`` set the Wi-Fi FTM responder feature. **Only for ESP32-S2 and ESP32-C3 SoC!**
 
 Return ``true`` if the configuration was successful.
 
@@ -262,9 +263,9 @@ softAPConfig
 
 Where:
 
-* ``IPAddress local_ip``
-* ``IPAddress gateway``
-* ``IPAddress subnet``
+* ``local_ip`` set the local IP address.
+* ``gateway`` set the gateway IP.
+* ``subnet`` set the subnet mask.
 
 Return ``true`` if the configuration was successful.
 
@@ -277,7 +278,7 @@ softAPdisconnect
 
 Where:
 
-* ``bool wifioff``
+* ``wifioff`` set the Wi-Fi off if ``true``.
 
 Return ``true`` if the command was successful.
 
@@ -360,7 +361,7 @@ Function to set the AP hostname.
 
 Where:
 
-* ``const char * hostname``
+* ``hostname`` set the device hostname.
 
 Return ``true`` if the configuration was successful.
 
@@ -375,7 +376,7 @@ Function to define the AP MAC address.
 
 Where:
 
-* ``uint8_t* mac``
+* ``mac`` set the new MAC address.
 
 Function to get the AP MAC address.
 
@@ -418,11 +419,15 @@ WiFiUdp
 Examples
 --------
 
+.. _ap example:
+
 Wi-Fi AP Example
 ****************
 
 .. literalinclude:: ../../../libraries/WiFi/examples/WiFiAccessPoint/WiFiAccessPoint.ino
     :language: arduino
+
+.. _sta example:
 
 Wi-Fi STA Example
 *****************
