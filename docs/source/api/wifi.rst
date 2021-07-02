@@ -57,7 +57,6 @@ The ``WiFiAP`` is used to configure and manage the Wi-Fi as Access Point. Here a
 Basic Usage
 ***********
 
-
 To start the Wi-Fi as AP
 
 .. code-block:: arduino
@@ -75,11 +74,11 @@ begin
 
 Where:
 
-* ``const char* ssid``
-* ``const char *passphrase``
-* ``int32_t channel``
-* ``const uint8_t* bssid``
-* ``bool connect``
+* ``const char* ssid`` set the AP SSID.
+* ``const char *passphrase`` set the AP password. Set as ``NULL`` for open networks.
+* ``int32_t channel`` set the Wi-Fi channel.
+* ``const uint8_t* bssid`` set the AP BSSID.
+* ``bool connect`` set ``true`` to connect to the configured network automatically.
 
 .. code-block:: arduino
 
@@ -87,13 +86,15 @@ Where:
 
 Where:
 
-* ``char* ssid``
-* ``char *passphrase``
-* ``int32_t channel``
-* ``const uint8_t* bssid``
-* ``bool connect``
+* ``char* ssid`` set the AP SSID.
+* ``char *passphrase`` set the AP password. Set as ``NULL`` for open networks.
+* ``int32_t channel`` set the Wi-Fi channel.
+* ``const uint8_t* bssid`` set the AP BSSID.
+* ``bool connect`` set ``true`` to connect to the configured network automatically.
 
 .. code-block:: arduino
+
+Function to start the connection after being configured.
 
     wl_status_t begin();
 
@@ -144,12 +145,18 @@ Return ``true`` if the configuration was successful.
 isConnected
 ***********
 
+Function used to get the connection state.
+
 .. code-block:: arduino
 
     bool isConnected();
 
+Return the connection state.
+
 setAutoConnect
 **************
+
+Function used to set the automatic connection.
 
 .. code-block:: arduino
 
@@ -157,17 +164,23 @@ setAutoConnect
 
 Where:
 
-* ``bool autoConnect``
+* ``bool autoConnect`` is set to ``true`` to enable this option.
 
 getAutoConnect
 **************
+
+Function used to get the automatic connection setting value.
 
 .. code-block:: arduino
 
     bool getAutoConnect();
 
+Return ``true`` is this setting is enabled.
+
 setAutoReconnect
 ****************
+
+Function used to set the automatic reconnection if the connection is lost.
 
 .. code-block:: arduino
 
@@ -175,14 +188,18 @@ setAutoReconnect
 
 Where:
 
-* ``bool autoConnect``
+* ``bool autoConnect`` is set to ``true`` to enable this option.
 
 getAutoReconnect
 ****************
 
+Function used to get the automatic reconnection if the connection is lost state.
+
 .. code-block:: arduino
 
     bool getAutoReconnect();
+
+Return ``true`` is this setting is enabled.
 
 WiFiSTA
 -------
@@ -274,12 +291,16 @@ softAPgetStationNum
 softAPIP
 ********
 
+Function to get the AP IPv4 address.
+
 .. code-block:: arduino
 
     IPAddress softAPIP();
 
 softAPBroadcastIP
 *****************
+
+Function to get the AP IPv4 broadcast address.
 
 .. code-block:: arduino
 
@@ -302,6 +323,8 @@ softAPSubnetCIDR
 softAPenableIpV6
 ****************
 
+Function used to enable the IPv6 support.
+
 .. code-block:: arduino
 
     bool softAPenableIpV6();
@@ -311,6 +334,8 @@ Return ``true`` if the configuration was successful.
 softAPIPv6
 **********
 
+Function to get the IPv6 address.
+
 .. code-block:: arduino
 
     IPv6Address softAPIPv6();
@@ -318,12 +343,16 @@ softAPIPv6
 softAPgetHostname
 *****************
 
+Function to get the AP hostname.
+
 .. code-block:: arduino
 
     const char * softAPgetHostname();
 
 softAPsetHostname
 *****************
+
+Function to set the AP hostname.
 
 .. code-block:: arduino
 
@@ -338,6 +367,8 @@ Return ``true`` if the configuration was successful.
 softAPmacAddress
 ****************
 
+Function to define the AP MAC address.
+
 .. code-block:: arduino
 
     uint8_t* softAPmacAddress(uint8_t* mac);
@@ -346,6 +377,8 @@ Where:
 
 * ``uint8_t* mac``
 
+Function to get the AP MAC address.
+
 .. code-block:: arduino
 
     String softAPmacAddress(void);
@@ -353,9 +386,13 @@ Where:
 softAPSSID
 **********
 
+Function to get the AP SSID.
+
 .. code-block:: arduino
 
     String softAPSSID(void) const;
+
+Returns the AP SSID.
 
 WiFiClient
 ----------
