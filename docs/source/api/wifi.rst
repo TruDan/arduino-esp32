@@ -93,9 +93,9 @@ Where:
 * ``bssid`` set the AP BSSID.
 * ``connect`` set ``true`` to connect to the configured network automatically.
 
-.. code-block:: arduino
-
 Function to start the connection after being configured.
+
+.. code-block:: arduino
 
     wl_status_t begin();
 
