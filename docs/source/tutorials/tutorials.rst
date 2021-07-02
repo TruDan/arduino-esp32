@@ -8,3 +8,4 @@ Tutorials
 
     Basic <basic>
     DFU <dfu>
+    Peripherals (GPIO mapping) <peripherals>
