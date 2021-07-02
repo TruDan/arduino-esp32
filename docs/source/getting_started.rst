@@ -95,7 +95,7 @@ Installing
 
 To install Arduino-ESP32, please see the dedicated section on the Installation guide. We recommend you to install using the boards manager.
 
-`Installing <installing.html>`_
+See `Installing Guides <installing.html>`_ for more details on how to install Arduino ESP32 support.
 
 Examples
 ********

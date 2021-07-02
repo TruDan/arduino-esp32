@@ -68,11 +68,11 @@ Steps to install Arduino ESP32 support on Windows
 
 **Step 1**
 
-1. Download and install the latest Arduino IDE ```Windows Installer``` from [arduino.cc](https://www.arduino.cc/en/Main/Software)
+1. Download and install the latest Arduino IDE ``Windows Installer`` from [arduino.cc](https://www.arduino.cc/en/Main/Software)
 2. Download and install Git from [git-scm.com](https://git-scm.com/download/win)
-3. Start ```Git GUI``` and run through the following steps:
+3. Start ``Git GUI`` and run through the following steps:
 
-- Select ```Clone Existing Repository```
+- Select ``Clone Existing Repository``
 
 .. figure:: _static/win-gui-1.png
    :align: center
@@ -80,10 +80,10 @@ Steps to install Arduino ESP32 support on Windows
    :figclass: align-center
 
 - Select source and destination
-   - Sketchbook Directory: Usually ```C:/Users/[YOUR_USER_NAME]/Documents/Arduino``` and is listed underneath the "Sketchbook location" in Arduino preferences.
-   - Source Location: ```https://github.com/espressif/arduino-esp32.git```
-   - Target Directory: ```[ARDUINO_SKETCHBOOK_DIR]/hardware/espressif/esp32```
-   - Click ```Clone``` to start cloning the repository
+   - Sketchbook Directory: Usually ``C:/Users/[YOUR_USER_NAME]/Documents/Arduino`` and is listed underneath the "Sketchbook location" in Arduino preferences.
+   - Source Location: ``https://github.com/espressif/arduino-esp32.git``
+   - Target Directory: ``[ARDUINO_SKETCHBOOK_DIR]/hardware/espressif/esp32``
+   - Click ``Clone`` to start cloning the repository
 
 **Step 2**
 
@@ -97,8 +97,8 @@ Steps to install Arduino ESP32 support on Windows
    :align: center
    :figclass: align-center
 
-- open a `Git Bash` session pointing to ```[ARDUINO_SKETCHBOOK_DIR]/hardware/espressif/esp32``` and execute ```git submodule update --init --recursive``` 
-- Open ```[ARDUINO_SKETCHBOOK_DIR]/hardware/espressif/esp32/tools``` and double-click ```get.exe```
+- open a `Git Bash` session pointing to ``[ARDUINO_SKETCHBOOK_DIR]/hardware/espressif/esp32`` and execute ```git submodule update --init --recursive``` 
+- Open ``[ARDUINO_SKETCHBOOK_DIR]/hardware/espressif/esp32/tools`` and double-click ``get.exe``
 
 **Step 4**
 
@@ -116,7 +116,7 @@ Steps to install Arduino ESP32 support on Windows
 
 1. Plug your ESP32 board and wait for the drivers to install (or install manually any that might be required)
 2. Start Arduino IDE
-3. Select your board in ```Tools > Board``` menu
+3. Select your board in ``Tools > Board`` menu
 4. Select the COM port that the board is attached to
 5. Compile and upload (You might need to hold the boot button while uploading)
 
@@ -127,20 +127,20 @@ Steps to install Arduino ESP32 support on Windows
 How to update to the latest code
 ********************************
 
-1. Start ```Git GUI``` and you should see the repository under ```Open Recent Repository```. Click on it!
+1. Start ``Git GUI`` and you should see the repository under ``Open Recent Repository``. Click on it!
 
 .. figure:: _static/win-gui-update-1.png
    :align: center
    :figclass: align-center
 
-1. From menu ```Remote``` select ```Fetch from``` > ```origin```
+1. From menu ``Remote`` select ``Fetch from`` > ``origin``
 
 .. figure:: _static/win-gui-update-2.png
    :align: center
    :figclass: align-center
 
-1. Wait for git to pull any changes and close ```Git GUI```
-2. Open ```[ARDUINO_SKETCHBOOK_DIR]/hardware/espressif/esp32/tools``` and double-click ```get.exe```
+1. Wait for git to pull any changes and close ``Git GUI``
+2. Open ``[ARDUINO_SKETCHBOOK_DIR]/hardware/espressif/esp32/tools`` and double-click ``get.exe``
 
 .. figure:: _static/win-gui-4.png
    :align: center
@@ -266,9 +266,9 @@ Where ``~/Documents/Arduino`` represents your sketch book location as per "Ardui
 
    xcode-select --install
 
-- Try `python3` instead of `python` if you get the error: `IOError: [Errno socket error] [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:590)` when running `python get.py`
+- Try ``python3`` instead of ``python`` if you get the error: ``IOError: [Errno socket error] [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:590)`` when running ``python get.py``
 
-- If you get the following error when running `python get.py` urllib.error.URLError: <urlopen error SSL: CERTIFICATE_VERIFY_FAILED, go to Macintosh HD > Applications > Python3.6 folder (or any other python version), and run the following scripts: Install Certificates.command and Update Shell Profile.command
+- If you get the following error when running ``python get.py`` urllib.error.URLError: <urlopen error SSL: CERTIFICATE_VERIFY_FAILED, go to Macintosh HD > Applications > Python3.6 folder (or any other python version), and run the following scripts: Install Certificates.command and Update Shell Profile.command
 
 - Restart Arduino IDE.
 

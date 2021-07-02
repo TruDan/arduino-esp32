@@ -18,7 +18,7 @@ Before sending us a Pull Request, please consider this list of points:
 
 * Is the code adequately commented for people to understand how it is structured?
 
-* Is there documentation or examples that go with code contributions? 
+* Is there documentation or examples that go with code contributions?
 
 * Are comments and documentation written in clear English, with no spelling or grammar errors?
 
