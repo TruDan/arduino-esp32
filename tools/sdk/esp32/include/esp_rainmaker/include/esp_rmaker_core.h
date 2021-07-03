@@ -26,8 +26,10 @@ extern "C"
 
 #define MAX_VERSION_STRING_LEN  16
 
+/** @cond **/
 /** ESP RainMaker Event Base */
 ESP_EVENT_DECLARE_BASE(RMAKER_EVENT);
+/** @endcond **/
 
 /** ESP RainMaker Events */
 typedef enum {
@@ -39,14 +41,6 @@ typedef enum {
     RMAKER_EVENT_CLAIM_SUCCESSFUL,
     /** Self Claiming Failed */
     RMAKER_EVENT_CLAIM_FAILED,
-    /** Node reboot has been triggered. The associated event data is the time in seconds
-     * (type: uint8_t) after which the node will reboot. Note that this time may not be
-     * accurate as the events are received asynchronously.*/
-    RMAKER_EVENT_REBOOT,
-    /** Wi-Fi credentials reset. Triggered after calling esp_rmaker_wifi_reset() */
-    RMAKER_EVENT_WIFI_RESET,
-    /** Node reset to factory defaults. Triggered after calling esp_rmaker_factory_reset() */
-    RMAKER_EVENT_FACTORY_RESET
 } esp_rmaker_event_t;
 
 /** ESP RainMaker Node information */
@@ -138,6 +132,12 @@ typedef enum {
     ESP_RMAKER_REQ_SRC_CLOUD,
     /** Request received when a schedule has triggered */
     ESP_RMAKER_REQ_SRC_SCHEDULE,
+    /** Request received from a local controller */
+    ESP_RMAKER_REQ_SRC_LOCAL,
+    /** This will always be the last value. Any value equal to or
+     * greater than this should be considered invalid.
+     */
+    ESP_RMAKER_REQ_SRC_MAX,
 } esp_rmaker_req_src_t;
 
 /** Write request Context */
@@ -187,6 +187,28 @@ typedef esp_err_t (*esp_rmaker_device_write_cb_t)(const esp_rmaker_device_t *dev
  */
 typedef esp_err_t (*esp_rmaker_device_read_cb_t)(const esp_rmaker_device_t *device, const esp_rmaker_param_t *param,
         void *priv_data, esp_rmaker_read_ctx_t *ctx);
+
+/** Convert device callback source to string
+ *
+ * Device read/write callback can be via different sources. This is a helper API
+ * to give the source in string format for printing.
+ *
+ * Example Usage:
+ * @code{c}
+ * static esp_err_t write_cb(const esp_rmaker_device_t *device, const esp_rmaker_param_t *param,
+ * const esp_rmaker_param_val_t val, void *priv_data, esp_rmaker_write_ctx_t *ctx)
+{
+    if (ctx) {
+        ESP_LOGI(TAG, "Received write request via : %s", esp_rmaker_device_cb_src_to_str(ctx->src));
+    }
+ * @endcode
+ *
+ * @param[in] src The src field as received in the callback context.
+ *
+ * @return NULL terminated source string on success
+ * @return NULL on failure
+ */
+const char *esp_rmaker_device_cb_src_to_str(esp_rmaker_req_src_t src);
 
 /**
  * Initialise a Boolean value
@@ -489,7 +511,7 @@ char *esp_rmaker_device_get_name(const esp_rmaker_device_t *device);
  * @return NULL terminated device type string on success.
  * @return NULL in case of failure, or if the type wasn't provided while creating the device.
  */
-char *esp_rmaker_device_get_name(const esp_rmaker_device_t *device);
+char *esp_rmaker_device_get_type(const esp_rmaker_device_t *device);
 
 /**
  * Add a parameter to a device/service
@@ -669,12 +691,6 @@ char *esp_rmaker_param_get_name(const esp_rmaker_param_t *param);
  */
 char *esp_rmaker_param_get_type(const esp_rmaker_param_t *param);
 
-/** Prototype for ESP RainMaker Work Queue Function
- *
- * @param[in] priv_data The private data associated with the work function.
- */
-typedef void (*esp_rmaker_work_fn_t)(void *priv_data);
-
 /** Report the node details to the cloud
  *
  * This API reports node details i.e. the node configuration and values of all the parameters to the ESP RainMaker cloud.
@@ -688,18 +704,6 @@ typedef void (*esp_rmaker_work_fn_t)(void *priv_data);
  * @return error in case of failure.
  */
 esp_err_t esp_rmaker_report_node_details(void);
-
-/** Queue execution of a function in ESP RainMaker's context
- *
- * This API queues a work function for execution in the ESP RainMaker Task's context.
- *
- * @param[in] work_fn The Work function to be queued.
- * @param[in] priv_data Private data to be passed to the work function.
- *
- * @return ESP_OK on success.
- * @return error in case of failure.
- */
-esp_err_t esp_rmaker_queue_work(esp_rmaker_work_fn_t work_fn, void *priv_data);
 
 #ifdef __cplusplus
 }
